@@ -8,12 +8,12 @@
     <View android:id="@+id/view2" android:layout_below="@id/view1" android:layout_width="match_parent" android:layout_height="20dp"
           android:background="@color/colorBack"/>
     <TextView android:id="@+id/tv" android:layout_marginLeft="5dp" android:layout_toRightOf="@id/view1"
-              android:layout_width="wrap_content" android:layout_height="wrap_content" tools:text="title"
+              android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="title"
               android:textStyle="bold"/>
     <TextView android:id="@+id/tv2" android:layout_marginLeft="10dp" android:layout_below="@id/view1" android:layout_width="wrap_content" android:layout_height="wrap_content"
-              tools:text="A"/>
+              android:text="A"/>
     <TextView android:id="@+id/tv3" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_below="@id/view1" style="@style/TvStyle"
-              tools:text="B"/>
+              android:text="B"/>
     <TextView android:layout_below="@id/view1" android:layout_centerHorizontal="true" style="@style/TvStyle"
               android:text="vs"/>
     <View android:layout_below="@id/view2"  android:layout_width="match_parent" android:layout_height="0.1dp" android:background="@color/colorLine"/>

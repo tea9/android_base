@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".base.activity.ExpandableUseActivity"/>
+        <activity android:name=".demo.activity.DataContrastActivity"/>
+        <activity android:name=".demo.activity.DataContrastOtherActivity"/>
     </application>
 
 </manifest>

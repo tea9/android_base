@@ -5,10 +5,10 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import com.chad.library.adapter.base.entity.MultiItemEntity
 import com.demo.android_base.R
-import com.demo.android_base.demo.adapter.DataContrastAdapter
-import com.demo.android_base.demo.entity.DataContrastItem0
-import com.demo.android_base.demo.entity.DataContrastItem1
-import com.demo.android_base.demo.entity.DataContrastItem2
+import com.demo.android_base.demo.adapter.DataContrastOtherAdapter
+import com.demo.android_base.demo.entity.DataContrastItemOther0
+import com.demo.android_base.demo.entity.DataContrastItemOther1
+import com.demo.android_base.demo.entity.DataContrastItemOther2
 import kotlinx.android.synthetic.main.activity_data_contrast.*
 import java.util.*
 
@@ -16,9 +16,10 @@ import java.util.*
 /**
  * created by tea9 at 2018/11/22
  */
-class DataContrastActivity : AppCompatActivity() {
+class DataContrastOtherActivity : AppCompatActivity() {
 
     internal var list: ArrayList<MultiItemEntity>? = null;
+    var adapter:DataContrastOtherAdapter? =null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +30,9 @@ class DataContrastActivity : AppCompatActivity() {
     private fun initView() {
         rv.layoutManager = LinearLayoutManager(this)
         list = generateData();
-        rv.adapter = DataContrastAdapter(list)
+        adapter = DataContrastOtherAdapter(list)
+        rv.adapter = adapter
+        adapter!!.expandAll()
     }
 
     private fun generateData():ArrayList<MultiItemEntity> {
@@ -43,35 +46,27 @@ class DataContrastActivity : AppCompatActivity() {
 
         val res = ArrayList<MultiItemEntity>()
         for (i in 0 until 1) {
-            val lv0 = DataContrastItem0("This is " + i + "th item in Level 0")
-            for (z in 0 until lv1Count){
-                lv0.addSubItem("zzzzz"+z)
+            val lv0 = DataContrastItemOther0("This is " + i + "th item in Level 0")
+            for (z in 0 until lv1Count) {
+                lv0.addSubItem(DataContrastItemOther0().DataContrastItemOther0Item("zzzz" + z))
             }
 
             res.add(lv0)
         }
         for (j in 0 until 1) {
-            val lv1 = DataContrastItem1("Level 1 item: $j")
+            val lv1 = DataContrastItemOther1("Level 1 item: $j")
             for (z in 0 until lv0Count){
-                lv1.addSubItem("zzzzz"+z)
+                lv1.addSubItem(DataContrastItemOther1().DataContrastItemOther1Item("zzzzz"+z))
             }
             res.add(lv1)
         }
         for (k in 0 until lv2Count) {
-            val lv2 = DataContrastItem2(nameList[k]+random.nextInt(40))
+            val lv2 = DataContrastItemOther2(nameList[k]+random.nextInt(40))
             for (z in 0 until lv0Count){
-                lv2.addSubItem("zzzzz"+z)
+                lv2.addSubItem(DataContrastItemOther2().DataContrastItemOther2Item("zzzzz"+z))
             }
             res.add(lv2)
         }
-//        for (l in 0 until lv3Count) {
-//            val lv3 = DataContrastItem3("lv3"+l)
-////            for (z in 0 until lv1Count){
-////                lv3.addSubItem("zzzzz"+z)
-////            }
-//            res.add(lv3)
-//        }
-//        res.add(DataContrastItem0("This is " + lv0Count + "th item in Level 0"))
         return res
     }
 }

@@ -7,13 +7,13 @@
     <Button
             android:id="@+id/btn1"
             style="@style/BtnStyle"
-            android:text="横线进度条"/>
-    <!--<Button android:id="@+id/btn2"-->
-            <!--style="@style/BtnStyle"-->
-            <!--android:text="圆环进度条"/>-->
-    <!--<Button android:id="@+id/btn3"-->
-            <!--style="@style/BtnStyle"-->
-            <!--android:text="圆角小竖条"/>-->
+            android:text="父子布局"/>
+    <Button android:id="@+id/btn2"
+            style="@style/BtnStyle"
+            android:text="数据对比"/>
+    <Button android:id="@+id/btn3"
+            style="@style/BtnStyle"
+            android:text="数据对比Other"/>
     <!--<Button android:id="@+id/btn4"-->
             <!--style="@style/BtnStyle"-->
             <!--android:text="一个方向横线进度条"/>-->

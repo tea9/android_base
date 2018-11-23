@@ -27,4 +27,5 @@ public class DataContrastItem0 extends AbstractExpandableItem<String> implements
     public int getLevel() {
         return 0;
     }
+
 }
