@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <View android:id="@+id/view1" android:layout_marginLeft="2dp" android:layout_marginTop="1dp" android:layout_width="4dp" android:layout_height="15dp"
+          android:background="@color/colorAccent"/>
+    <View android:id="@+id/view2" android:layout_below="@id/view1" android:layout_width="match_parent" android:layout_height="20dp"
+          android:background="@color/colorBack"/>
+    <TextView android:id="@+id/tv" android:layout_marginLeft="5dp" android:layout_toRightOf="@id/view1"
+              android:layout_width="wrap_content" android:layout_height="wrap_content" tools:text="title"
+              android:textStyle="bold"/>
+    <TextView android:id="@+id/tv2" android:layout_marginLeft="10dp" android:layout_below="@id/view1" android:layout_width="wrap_content" android:layout_height="wrap_content"
+              tools:text="A"/>
+    <TextView android:id="@+id/tv3" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_below="@id/view1" style="@style/TvStyle"
+              tools:text="B"/>
+    <TextView android:layout_below="@id/view1" android:layout_centerHorizontal="true" style="@style/TvStyle"
+              android:text="vs"/>
+    <View android:layout_below="@id/view2"  android:layout_width="match_parent" android:layout_height="0.1dp" android:background="@color/colorLine"/>
+</RelativeLayout>
