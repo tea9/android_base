@@ -15,6 +15,7 @@ import java.util.*
 
 /**
  * created by tea9 at 2018/11/22
+ * 多item布局 一个recyclerview
  */
 class DataContrastOtherActivity : AppCompatActivity() {
 

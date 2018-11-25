@@ -15,6 +15,7 @@ import java.util.ArrayList;
 
 /**
  * created by tea9 at 2018/11/22
+ * 父子布局 例子
  */
 public class ExpandableUseActivity extends AppCompatActivity {
 
