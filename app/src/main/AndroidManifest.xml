@@ -19,6 +19,7 @@
         <activity android:name=".base.activity.ExpandableUseActivity"/>
         <activity android:name=".demo.activity.DataContrastActivity"/>
         <activity android:name=".demo.activity.DataContrastOtherActivity"/>
+        <activity android:name=".demo.activity.AllClassifyActivity"/>
     </application>
 
 </manifest>

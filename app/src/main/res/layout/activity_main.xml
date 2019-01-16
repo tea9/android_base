@@ -17,4 +17,7 @@
     <!--<Button android:id="@+id/btn4"-->
             <!--style="@style/BtnStyle"-->
             <!--android:text="一个方向横线进度条"/>-->
+    <Button android:id="@+id/btn4"
+            style="@style/BtnStyle"
+            android:text="全部分类页面"/>
 </GridLayout>
